@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // new line
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -13,9 +14,10 @@ module.exports = {
     contentBase: './dist'      
   },
   plugins: [
-    new CleanWebpackPlugin(), 
+    new CleanWebpackPlugin(),
+    new Dotenv(), 
     new HtmlWebpackPlugin({
-      title: 'template', //Change!!!!!!!!
+      title: 'currency-exchange',
       template: './src/index.html',
       inject: 'body'
     })

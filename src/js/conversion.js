@@ -1,4 +1,4 @@
-export default class Template {
+export default class CurrencyConversion {
   constructor() {
     
   }
