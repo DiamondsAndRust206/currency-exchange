@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <head>
-    <title>Template</title>
-  </head>
+  <title>Currency Exchange</title>
 </head>
 <body>
+  <h1>Currency Exchange</h1>
+  <div class="container">
+    <form id="form">
+      <label for="currency-select">Choose A Currency:</label>
+      <select name="currency" id="currency-select">
+        <option value="">--Please choose an option--</option>
+        <option value="euro">Euro</option>
+        <option value="yen">Japanese yen</option>
+        <option value="pound">British pound</option>
+        <option value="aus-dollar">Austrailian dollar</option>
+        <option value="can-dollar">Canadian dollar</option>
+      </select>
 
+      <label for="">Enter your currency amount</label>
+      <input type="number" id="number-input" placeholder="USD" required/>
+
+      <div class="buttonDiv">
+        <button type="button" id="button">Run Conversion</button>
+      </div>
+
+    </form>
+    <div id="output"></div>
+  </div>
 </body>
-</html>
+</html
