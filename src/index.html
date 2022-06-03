@@ -8,7 +8,7 @@
   <div class="container">
     <form id="form">
       <label for="currency-select">Choose A Currency:</label>
-      <select name="currency" id="currency-select">
+      <select name="currency" id="currency-select" class="form-control">
         <option value="">--Please choose an option--</option>
         <option value="euro">Euro</option>
         <option value="yen">Japanese yen</option>
@@ -25,7 +25,8 @@
       </div>
 
     </form>
-    <div id="output"></div>
+    <h3 id="response" class="hidden">Current Rate</h3>
+    <p id="error-message" class="error"></p>
   </div>
 </body>
 </html
