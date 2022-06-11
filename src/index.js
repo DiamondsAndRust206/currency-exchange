@@ -6,12 +6,10 @@ import { CurrencyConversionApi } from './js/conversion.js';
 
 async function convertCurrency() {
   let amount = $("#number-input").val();
-  let option = $("option");
+  const currencyType = $("input:radio[name=operator]:checked").val();
   let currency;
-  if(option === "euro") {
-    currency = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/EUR/${amount}`
-  }
-  $('#output').text("Your US Dollars exchange at a rate of ");
+  if (currencyType === "pnd") {
+    currency = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/GBP/${amount}`;
 }
 
 $(document).ready(function () {
