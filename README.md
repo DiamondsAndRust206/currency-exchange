@@ -3,7 +3,7 @@
 #### By Timothy Ryan Gibson
 #### _A simple web application to exchange currency where the base currency is USD._
 
-_Link to [Currency Exchange](https://diamondsandrust206.github.io/currency-exchange/)_
+_Link to [currency-exchange](https://diamondsandrust206.github.io/currency-exchange/)_
 
 ## Technologies used
 
