@@ -32,7 +32,7 @@ _This web application will exchange USD into five different currencies._
 
 ## Know Bugs
 
-* _No know bugs._
+* _Does not display currency exchange rate._
 
 ## License
 
