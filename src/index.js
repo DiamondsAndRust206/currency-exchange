@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { CurrencyConversionApi } from './js/conversion.js';
+import { CurrencyConversionApi } from './conversion.js';
 
 function errorFunction(element, response) {
   if (response instanceof Error) {
@@ -29,7 +29,13 @@ async function convertCurrency() {
   } else if (currencyType === "can") {
     currency = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/CAD/${amount}`;
   } else {
-    $("#error-message").text("this is not a supported currency!")
+    $("#error-message").text("this is not a supported currency!");
+  }
+
+  const response = await CurrencyConversionApi.getCurrency(currency);
+  const isErrorPresent = errorFunction($("#error-message"), response);
+  if (!isErrorPresent) {
+    $('#response').html("Your US Dollars exchange at a rate of " + response.conversion_rate + " to give you " + response.conversion_result + " " + response.target_code );
   }
 }
 
@@ -38,6 +44,6 @@ $(document).ready(function () {
     event.preventDefault();
     let amount = $('#number-input').val();
     convertCurrency(amount);
-    });
   });
+});
 

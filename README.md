@@ -1,9 +1,9 @@
-# **Mr. Robogers Neighborhood**
+# **Currency Exchange**
 
 #### By Timothy Ryan Gibson
-#### _A simple web application to creat a list of numbers based on the users input and replace the values accordingly._
+#### _A simple web application to exchange currency where the base currency is USD._
 
-_Link to [mr-roboger](https://diamondsandrust206.github.io/mr-roboger/)_
+_Link to [Currency Exchange](https://diamondsandrust206.github.io/currency-exchange/)_
 
 ## Technologies used
 
@@ -13,17 +13,22 @@ _Link to [mr-roboger](https://diamondsandrust206.github.io/mr-roboger/)_
 * Javascript
 * jQuery
 * Bootstrap
+* webpack
+* npm
 
 ## Description
 
-_This web application will ask the user for a number. The application will create a list of numbers starting with zero all the way to the respective input number. The number 3 will be replaced with "Won't you be my neighbor?", the number 2 will be replaced with "Boop!", and the number 1 will be replaced with "Beep!". The hierarchy is such that 3 takes precedent over 2 and 1, and the number 2 takes precedent of 1. If a number has more than one digit the higher number of the three will be replaced with the respective substitution._
+_This web application will exchange USD into five different currencies._
 
 ## Setup/Installation Requirements
 
-* At https://github.com/DiamondsAndRust206/mr-roboger copy the repository URL named "mr-robogers". You can do this by clicking the green Code button and copy the URL from there.
+* At https://github.com/DiamondsAndRust206/currency-exchange copy the repository URL named "currency-exchange". You can do this by clicking the green Code button and copy the URL from there.
 * In a shell program, clone the copied repository to your desktop (git clone URL).
-* Open the newly cloned directory named "mr-robogers".
-* From this directory, open index.html
+* Go to https://app.exchangerate-api.com/sign-up and sign up to get a free API key.
+* On the root directory, create a .env file.
+* Store your API key with this format: API_KEY=Your-API Key-Here
+* $ npm install
+* $ npm run start 
 
 ## Know Bugs
 

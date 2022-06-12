@@ -1,5 +1,5 @@
 export default class CurrencyConversionApi {
-  static getCurrency(currency) {
+  static getCurrency(amount) {
     return fetch(`https://v6.exchangerate-api.com/v6/${process.evn.API_KEY}/latest/USD`)
       .then(function (response) {
         if (!response.ok) {

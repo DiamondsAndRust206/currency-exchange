@@ -7,3 +7,6 @@ body {
 #error-message {
   color: red;
 }
+h1 {
+  text-align: center;
+}
