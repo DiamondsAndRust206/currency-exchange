@@ -3,8 +3,6 @@
 #### By Timothy Ryan Gibson
 #### _A simple web application to exchange currency where the base currency is USD._
 
-_Link to [currency-exchange](https://diamondsandrust206.github.io/currency-exchange)_
-
 ## Technologies used
 
 * HTML
@@ -32,7 +30,7 @@ _This web application will exchange USD into five different currencies._
 
 ## Know Bugs
 
-* _Does not display currency exchange rate._
+* _No known bugs._
 
 ## License
 
